@@ -1,7 +1,7 @@
 # CSC-Hacks-2021
 
 ## Project Description
-An interactive story-driven game.
+A puzzle-based website.
 ## Team Information
 
 Emma Tristano
