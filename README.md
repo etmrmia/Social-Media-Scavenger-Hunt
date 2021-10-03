@@ -16,4 +16,4 @@ Jackie Colmenares
 Tiffany Xiao
 * Pitt, 2025
 * tix24@pitt.edu 
-* LinkedIn: www.linkedin.com/in/tiffany-xiao-a3a53a210 
+* LinkedIn: www.linkedin.com/in/tiffany-xiao
