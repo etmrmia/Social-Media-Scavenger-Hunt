@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: repeating-linear-gradient(snow, snow 6%, lightgrey 7%);
+    font-family: 'Architects Daughter';
+}
+
+h2 {
+    background: aliceblue;
+    border: 1px dotted lightgray;
+    padding: 40px 0px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 10px 10px;
+    border-radius: 15px;
+    box-shadow: 3px;
+}
+
+.profile-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile-header {
+    background: aliceblue;
+    border: 1px dotted lightgray;
+    padding: 40px 0px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 0px 10px;
+    border-radius: 15px;
+    box-shadow: 3px;
+}
+
+.profile-header img {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 30px;
+    padding: 14px;
+}
+
+.profile-header h3 {
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.profile-header h4 {
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    height: 35px;
+    width: 125px;
+    border: 1px solid lightgray;
+    margin: 0 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.profile-header p {
+    vertical-align: bottom;
+    text-align: center;
+    display: inline-block;
+    height: 35;
+    width: 125px;
+    border: 1px solid lightgray;
+    margin: 0 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.stack {
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    border: 1px solid lightgray;
+    margin: 0 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.description {
+    vertical-align: bottom;
+    display: inline-block;
+    border: 1px solid lightgray;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
