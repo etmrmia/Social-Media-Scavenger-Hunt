@@ -48,9 +48,9 @@ h2 {
 
 .profile-header h3 {
     display: inline-block;
-    border: 2px solid black;
+    vertical-align: top;
     margin: 10px;
-    padding: 14px;
+    padding: 25px 14px;
     text-decoration: none;
 }
 
@@ -72,8 +72,7 @@ h2 {
     display: inline-block;
     height: 35;
     width: 125px;
-    border: 1px solid lightgray;
-    margin: 0 10px;
+    margin: 0px 10px;
     padding: 5px;
     text-decoration: none;
 }
@@ -81,9 +80,8 @@ h2 {
 .stack {
     vertical-align: middle;
     text-align: center;
-    display: inline-block;
+    display:-moz-inline-stack;
     height: auto;
-    border: 1px solid lightgray;
     margin: 0 10px;
     padding: 5px;
     text-decoration: none;
@@ -97,3 +95,17 @@ h2 {
     padding: 5px;
     text-decoration: none;
 }
+
+.inline {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
