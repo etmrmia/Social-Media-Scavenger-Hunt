@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='style.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
@@ -12,8 +13,53 @@
     <title>Social Media</title>
 </head>
 <body>
-    <h2><a href="index.html">[Social Media Site Name]</a></h2>
-    <a href="main_profile.html">Arachnophobe404</a>
-    <a href="coffee_profile.html">Leslie Coffee Co</a>
+    <header>
+        <h2><a href="index.html">[Social Media Site Name]</a></h2>
+        <a href="log_in.html" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=350,height=250'); return false;">Log in</a> 
+
+    </header>
+
+    <!-- An attempt at JQuery -->
+    <script>
+        for (i>0; i<document.getElementsByTagName(".main-page").length; i++){
+            document.getElementById(".main-page").style.zIndex = i;
+        }
+        $(window).scroll(function(){
+        $(".main-page").css("top",Math.max(0,250-$(this).scrollTop()));
+        });
+    </script>
+
+        <ul>
+            <li class="main-page">
+                <img src="images/spider-image.jpeg" alt="image stand-in" class="main-images">
+            </li>
+            <li class="main-page">
+                <img src="images/spider-image.jpeg" alt="image stand-in" class="main-images">
+            </li>
+            <li class="main-page">
+                <img src="images/spider-image.jpeg" alt="image stand-in" class="main-images">
+            </li>
+            <li class="main-page">
+                <img src="images/spider-image.jpeg" alt="image stand-in" class="main-images">
+            </li>
+            <li class="main-page">
+                <img src="images/spider-image.jpeg" alt="image stand-in" class="main-images">
+            </li>
+            <li class="main-page">
+                <img src="images/spider-image.jpeg" alt="image stand-in" class="main-images">
+            </li>
+        </ul>
+
+    <div class="side-menu">  
+        <div class="stack">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Spide-2011-08-06.jpg" alt="Spider image" class="small-profile-image">
+                <a href="main_profile.html" class="profile-name">Arachnophobe404</a>
+            </span>
+        </div>
+        <div class="stack">
+            <a href="coffee_profile.html">Leslie Coffee Co</a>
+        </div>
+    </div>
 </body>
 </html>

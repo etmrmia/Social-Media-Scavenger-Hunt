@@ -1,40 +1,120 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 10px;
 }
 
 body {
-    background: repeating-linear-gradient(snow, snow 6%, lightgrey 7%);
+    background-image: url("images/paper-background.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
     font-family: 'Architects Daughter';
 }
 
-h2 {
-    background: aliceblue;
-    border: 1px dotted lightgray;
-    padding: 40px 0px;
+header {
+    background: snow;
+    border: 5px dotted gray;
+    padding: 20px 0px;
     position: relative;
     text-align: left;
-    width: 100%;
     margin: 10px 10px;
     border-radius: 15px;
     box-shadow: 3px;
 }
 
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.stack {
+    vertical-align: middle;
+    text-align: center;
+    display:-moz-inline-stack;
+    height: auto;
+    margin: 0 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.inline {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.side-menu {
+    background: snow;
+    border: 5px dotted gray;
+    padding: 40px 0px;
+    position: fixed;
+    right: 0;
+    top: 143px;
+    width: 23%;
+    margin: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 3px;
+}
+
+/* Home page */
+
+.main-page {
+    background: snow;
+    border: 5px dotted gray;
+    padding: 40px 0px;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+    width: 72%;
+    margin: 30px 10px;
+    border-radius: 15px;
+    box-shadow: 3px;
+}
+
+.main-images {
+    object-fit: cover;
+    height: 500px;
+    width: 450px;
+    position: relative;
+    left: 35px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.small-profile-image {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 3px;
+    vertical-align: middle;
+}
+
+.profile-name {
+    display: inline-block;
+    vertical-align:middle;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* profile pages */
+
 .profile-image {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
 }
 
 .profile-header {
-    background: aliceblue;
-    border: 1px dotted lightgray;
+    background: snow;
+    border: 5px dotted gray;
     padding: 40px 0px;
     position: relative;
     text-align: left;
-    width: 100%;
-    margin: 0px 10px;
+    margin: 0px 200px 10px 10px;
     border-radius: 15px;
     box-shadow: 3px;
 }
@@ -47,8 +127,9 @@ h2 {
 }
 
 .profile-header h3 {
+    font-size: xx-large;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: 95%;
     margin: 10px;
     padding: 25px 14px;
     text-decoration: none;
@@ -60,7 +141,7 @@ h2 {
     display: inline-block;
     height: 35px;
     width: 125px;
-    border: 1px solid lightgray;
+    border: 1px solid gray;
     margin: 0 10px;
     padding: 5px;
     text-decoration: none;
@@ -77,35 +158,21 @@ h2 {
     text-decoration: none;
 }
 
-.stack {
-    vertical-align: middle;
-    text-align: center;
-    display:-moz-inline-stack;
-    height: auto;
-    margin: 0 10px;
-    padding: 5px;
-    text-decoration: none;
+.profile-info {
+    position: relative;
+    bottom: 150px;
+    right: 125px;
 }
 
 .description {
-    vertical-align: bottom;
-    display: inline-block;
-    border: 1px solid lightgray;
+    vertical-align: top;
+    position: absolute;
+    bottom: 90px;
+    left: 50px;
+    border: 1px dotted gray;
+    border-radius: 15px;
     margin: 10px;
     padding: 5px;
     text-decoration: none;
 }
 
-.inline {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    padding: 14px;
-    text-decoration: none;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
