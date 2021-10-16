@@ -6,8 +6,8 @@
 
 body {
     background-image: url("images/paper-background.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Architects Daughter';
 }
 
@@ -88,6 +88,7 @@ ul {
     width: 450px;
     position: relative;
     left: 35px;
+    border: gray dotted 5px;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -125,7 +126,7 @@ ul {
     text-align: left;
     margin: 30px 200px 20px 10px;
     border-radius: 15px;
-    box-shadow: 3px 3px 6px rgba(50, 50, 50, .7);;
+    box-shadow: 3px 3px 6px rgba(50, 50, 50, .7);
 }
 
 .profile-header img {
@@ -176,7 +177,7 @@ ul {
 .description {
     vertical-align: top;
     position: relative;
-    top: 40px;
+    bottom: 170px;
     right: 870px;
     border: 1px dotted gray;
     border-radius: 15px;
