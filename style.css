@@ -14,12 +14,12 @@ body {
 header {
     background: snow;
     border: 5px dotted gray;
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
     position: relative;
     text-align: left;
     margin: 10px 10px;
     border-radius: 15px;
-    box-shadow: 3px;
+    box-shadow: 3px 3px 6px rgba(50, 50, 50, .7);
 }
 
 ul {
@@ -56,7 +56,15 @@ ul {
     width: 23%;
     margin: 10px 30px;
     border-radius: 15px;
-    box-shadow: 3px;
+    box-shadow: 3px 3px 6px rgba(50, 50, 50, .7);
+}
+
+.log-in-link {
+    position: relative;
+    bottom: 40px;
+    left: 1000px;
+    overflow: scroll;
+    margin: 0;
 }
 
 /* Home page */
@@ -71,7 +79,7 @@ ul {
     width: 72%;
     margin: 30px 10px;
     border-radius: 15px;
-    box-shadow: 3px;
+    box-shadow: 3px 3px 6px rgba(50, 50, 50, .7);
 }
 
 .main-images {
@@ -89,7 +97,7 @@ ul {
     width: 25px;
     border-radius: 50%;
     border: 1px solid black;
-    box-shadow: 3px;
+    box-shadow: 3px 3px 6px rgba(50, 50, 50, .7);
     vertical-align: middle;
 }
 
@@ -112,11 +120,12 @@ ul {
     background: snow;
     border: 5px dotted gray;
     padding: 40px 0px;
+    width: 72%;
     position: relative;
     text-align: left;
-    margin: 0px 200px 10px 10px;
+    margin: 30px 200px 20px 10px;
     border-radius: 15px;
-    box-shadow: 3px;
+    box-shadow: 3px 3px 6px rgba(50, 50, 50, .7);;
 }
 
 .profile-header img {
@@ -161,14 +170,15 @@ ul {
 .profile-info {
     position: relative;
     bottom: 150px;
-    right: 125px;
+    left: 70px;
+    box-shadow: 3px 3px 6px rgba(50, 50, 50, .7);
 }
 
 .description {
     vertical-align: top;
-    position: absolute;
-    bottom: 90px;
-    left: 50px;
+    position: relative;
+    top: 40px;
+    right: 870px;
     border: 1px dotted gray;
     border-radius: 15px;
     margin: 10px;
