@@ -11,18 +11,26 @@
     <h3 id="log-in" onclick="logIn()">Log in:</p>
 
     <form>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password:</label><br>
-        <input type="text" id="password" name="password">
-        <input type="submit">
-    </form>
-    <!--
-    <script>
-    function logIn() {
-    document.getElementById("log-in").style.color = "red";
-    }
-    </script>
-    -->
+	  <label for="username">Username:</label>
+	  <input type="text" id="username" name="username" required>
+	  <br>
+	  <label for="password">Password:</label>
+	  <input type="password" id="pass" name="pass" required">
+	  <br>
+	  <input type="submit" onclick="pwd()" value="Go!">
+	</form>
+	
+	<script>
+	  function pwd() {
+	    var passCheck = document.getElementById("pass").value;
+	    passCheck = passCheck.toLowerCase();
+	    if(passCheck === 'wchitmacdonadt'){
+		alert('You did it!');
+	    } else {
+		alert('Try again!');
+	    }
+	  }
+	</script>
+                                                      
 </body>
 </html>
