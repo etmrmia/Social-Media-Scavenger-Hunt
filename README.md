@@ -12,6 +12,8 @@ As people who have had very little experience with coding before this, our main 
 To view our project, clone our repository and open the index.html file. While we are still working on making the website functional, we would appreciate if you would look at what we have so far. Let us know what you think and if you have any tips for us at this link: https://forms.gle/StimMEPDWZs3R4337. 
 Thank you!
 
+So far, we have a basic layout for the website. Most of the information such as the description boxes and pictures is in place of what will go there later. We will add some more profile pages and try to add a comment section that will include additional clues. The log-in link will eventually open to another webpage to congratulate the user for solving the puzzle.
+
 
 ## Team Information
 
