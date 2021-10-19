@@ -7,6 +7,12 @@ Our CSC Hacks project is a riddle-based website game in which the user is tasked
 
 As people who have had very little experience with coding before this, our main goal was just to learn as much as possible about some of the simpler languages (namely HTML, CSS, and JavaScript) while also making something cool and fun to interact with. 
 
+
+## MVP Demo
+To view our project, clone our repository and open the index.html file. While we are still working on making the website functional, we would appreciate if you would look at what we have so far. Let us know what you think and if you have any tips for us at this link: https://forms.gle/StimMEPDWZs3R4337. 
+Thank you!
+
+
 ## Team Information
 
 Emma Tristano
