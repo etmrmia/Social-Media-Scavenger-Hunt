@@ -19,17 +19,53 @@
 	  <br>
 	  <input type="submit" onclick="pwd()" value="Go!">
 	</form>
+	<div id="clues" style="display: none;">
+		<form>
+			<label for="hometown">What is the name of your hometown?</label>
+			<input type="text" id="hometown" name="hometown" required>
+			<br>
+			<label for="maiden_name">What is your mother's maiden name?</label>
+			<input type="maiden_name" id="maiden_nam" name="maiden_name" required">
+			<br>
+			<label for="first_pet">What was your first pet's name?</label>
+			<input type="first_pet" id="first_pet" name="first_pet" required">
+			<br>
+	  		<input type="submit" onclick="finalClue()" value="Enter">
+		</form>
+	</div>
+	<p id="final_clue" style="display: none;">wichitamacdonaldspot</p>
+	<input type="button" onclick="clues()" id="toggle" value="Forgot password">
 	
 	<script>
-	  function pwd() {
+	function pwd() {
 	    var passCheck = document.getElementById("pass").value;
 	    passCheck = passCheck.toLowerCase();
-	    if(passCheck === 'wchitmacdonadt'){
-		alert('You did it!');
+	    if( passCheck === 'wchitmacdonadt') {
+			alert('You did it!');
 	    } else {
-		alert('Try again!');
+			alert('Try again!');
 	    }
-	  }
+	}
+
+	function clues() {
+		const clues = document.getElementById("clues");
+		const btn = document.getElementById("toggle");
+		if (clues.style.display !== "none") {
+			clues.style.display = "none";
+		} else {
+			clues.style.display = "block";
+		}
+	}
+
+	function finalClue() {
+		let hometown = document.getElementById("hometown");
+		let maiden_name = document.getElementById("maiden_name");
+		let first_pet = document.getElementById("first_pet");
+				
+		if (hometown.toLowerCase() == 'wichita' && maiden_name.toLowerCase() == "macDonald" && first_pet.toLowerCase() == "spot") {
+			finalClue.style.display = "block";
+		}
+	}
 	</script>
                                                       
 </body>

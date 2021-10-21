@@ -161,8 +161,7 @@ ul {
     vertical-align: bottom;
     text-align: center;
     display: inline-block;
-    height: 35;
-    width: 125px;
+    width: auto;
     margin: 0px 10px;
     padding: 5px;
     text-decoration: none;
@@ -175,10 +174,10 @@ ul {
 }
 
 .description {
-    vertical-align: top;
     position: relative;
-    bottom: 170px;
-    right: 870px;
+    right: 1020px;
+    bottom: 90px;
+    width: 1000px;
     border: 1px dotted gray;
     border-radius: 15px;
     margin: 10px;
