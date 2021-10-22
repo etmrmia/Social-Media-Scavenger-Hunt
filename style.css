@@ -174,10 +174,7 @@ ul {
 }
 
 .description {
-    position: relative;
-    right: 1020px;
-    bottom: 90px;
-    width: 1000px;
+    display: inline-block;
     border: 1px dotted gray;
     border-radius: 15px;
     margin: 10px;
