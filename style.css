@@ -170,14 +170,11 @@ ul {
 .profile-info {
     position: relative;
     bottom: 150px;
-    left: 70px;
 }
 
 .description {
     display: inline-block;
-    border: 1px dotted gray;
     border-radius: 15px;
-    margin: 10px;
     padding: 5px;
     text-decoration: none;
 }
