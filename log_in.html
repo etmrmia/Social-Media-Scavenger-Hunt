@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Log in</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
 </head>
-
 <body>
-	<h3 id="log-in" onclick="logIn()">Log in:</p>
+    <h3 id="log-in" onclick="logIn()">Log in:</h3>
 
-		<form>
-			<label for="username">Username:</label>
-			<input type="text" id="username" name="username" required>
-			<br>
-			<label for="password">Password:</label>
-			<input type="password" id="pass" name="pass" required">
-			<br>
-			<input type="submit" onclick="pwd()" value="Go!">
-		</form>
-		<div id="clues" style="display: none;">
-			<form>
-				<label for="hometown">What is the name of your hometown?</label>
-				<input type="text" id="hometown" name="hometown" required>
-				<br>
-				<label for="maiden_name">What is your mother's maiden name?</label>
-				<input type="maiden_name" id="maiden_nam" name="maiden_name" required">
-				<br>
-				<label for="first_pet">What was your first pet's name?</label>
-				<input type="first_pet" id="first_pet" name="first_pet" required">
-				<br>
-				<input type="submit" onclick="finalClue()" value="Enter">
-			</form>
-		</div>
-		<p id="final_clue" style="display: none;">wichitamacdonaldspot</p>
-		<input type="button" onclick="clues()" id="toggle" value="Forgot password">
+    <form>
+	  <label for="username">Username:</label>
+	  <input type="text" id="username" name="username" required>
+	  <br>
+	  <label for="pass">Password:</label>
+	  <input type="password" id="pass" name="pass" required>
+	  <br>
+	  <input type="submit" onclick="pwd()" value="Go!">
+    </form>
+    <div id="clues" style="display: none;">
+	<form>
+		<label for="hometown">What is the name of your hometown?</label>
+		<input type="text" id="hometown" name="hometown" required>
+		<br>
+		<label for="maiden_name">What is your mother's maiden name?</label>
+		<input type="text" id="maiden_name" name="maiden_name" required>
+		<br>
+		<label for="first_pet">What was your first pet's name?</label>
+		<input type="text" id="first_pet" name="first_pet" required>
+		<br>
+	  	<input type="submit" onclick="finalClue()" value="Enter">
+	</form>
+    </div>
+    
+	<p id="final_clue" style="display: none;">wichitamacdonaldspot</p>
+	<input type="button" onclick="clues()" id="toggle" value="Forgot password">
+	
+	<script>
+            function pwd() {
+                var passCheck = document.getElementById("pass");
+                passCheck = passCheck.toLowerCase();
+                if(passCheck === 'wchitmacdonadt') {
+                            alert('You did it!');
+                } else {
+                            alert('Try again!');
+                }
+            }
 
-		<script>
-			function pwd() {
-				var passCheck = document.getElementById("pass").value;
-				passCheck = passCheck.toLowerCase();
-				if (passCheck === 'wchitmacdonadt') {
-					alert('You did it!');
-				} else {
-					alert('Try again!');
-				}
-			}
+            function clues() {
+                    const clues = document.getElementById("clues");
+                    const btn = document.getElementById("toggle");
+                    if (clues.style.display !== "none") {
+                            clues.style.display = "none";
+                    } else {
+                            clues.style.display = "block";
+                    }
+            }
 
-			function clues() {
-				const clues = document.getElementById("clues");
-				const btn = document.getElementById("toggle");
-				if (clues.style.display !== "none") {
-					clues.style.display = "none";
-				} else {
-					clues.style.display = "block";
-				}
-			}
+            function finalClue() {
+                    let hometown = document.getElementById("hometown").value;
+                    let maiden_name = document.getElementById("maiden_name").value;
+                    let first_pet = document.getElementById("first_pet").value;
 
-			function finalClue() {
-				let hometown = document.getElementById("hometown");
-				let maiden_name = document.getElementById("maiden_name");
-				let first_pet = document.getElementById("first_pet");
-
-				if (hometown.toLowerCase() == 'wichita' && maiden_name.toLowerCase() == "macDonald" && first_pet.toLowerCase() == "spot") {
-					finalClue.style.display = "block";
-				}
-			}
-		</script>
-
+                    if (hometown.toLowerCase() === "wichita" && maiden_name.toLowerCase() === "macdonald" && first_pet.toLowerCase() === "spot") {
+                            window.open('FinalClue.html','targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=350,height=250'); return false;
+            
+                    } else {
+                       alert('Incorrect answers. Please try again.');
+                    }
+                }
+	</script>
+                                                     
 </body>
-
 </html>
