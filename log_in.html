@@ -29,6 +29,9 @@
 		<label for="first_pet">What was your first pet's name?</label>
 		<input type="text" id="first_pet" name="first_pet" required>
 		<br>
+		<label for="birthday">Enter your birthday (think in a more computational set of numbers)</label>
+                <input type="text" id="birthday" name="birthday" required>
+		<br>
 	  	<input type="submit" onclick="finalClue()" value="Enter">
 	</form>
     </div>
@@ -61,8 +64,9 @@
                     let hometown = document.getElementById("hometown").value;
                     let maiden_name = document.getElementById("maiden_name").value;
                     let first_pet = document.getElementById("first_pet").value;
+let birthday = document.getElementById("birthday").value;
 
-                    if (hometown.toLowerCase() === "wichita" && maiden_name.toLowerCase() === "macdonald" && first_pet.toLowerCase() === "spot") {
+                    if (hometown.toLowerCase() === "wichita" && maiden_name.toLowerCase() === "macdonald" && first_pet.toLowerCase() === "spot" && birthday === "10111101111111010001") {
                             window.open('FinalClue.html','targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=350,height=250'); return false;
             
                     } else {
